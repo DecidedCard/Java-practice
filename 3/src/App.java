@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import ConstructorTest.Circle;
+
 public class App {
     public static void main(String[] args) throws Exception {
         int[] a = { 1, 2, 3, 4, 5 }; // 배열의 초기화
@@ -40,4 +42,9 @@ public class App {
         sc.close();
     }
 
+    public static void ConstructorTest(String args[]) {
+        Circle c = new Circle(5.0);
+        // System.out.println(c.r); // 컴파일 오류 메소드 없는 변수기 때문에 다른 패키지에서 사용할 수 없음
+        System.out.println(c.getArea());
+    }
 }
